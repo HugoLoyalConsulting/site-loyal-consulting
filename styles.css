@@ -1,9 +1,30 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #222;
   background: #fff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #f0f0f0;
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #7030A0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
 }
 
 .container {
@@ -59,7 +80,7 @@ body {
 }
 
 .plans {
-  background: #f4f4f4;
+  background: linear-gradient(135deg, #fdfdfd, #f4f4f4);
 }
 
 .plan-cards {
@@ -73,8 +94,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  flex: 1 1 250px;
-  max-width: 280px;
+  flex: 1 1 280px;
   box-shadow: 0 0 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
@@ -85,12 +105,22 @@ body {
 
 .plan h3 {
   color: #7030A0;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95em;
+  line-height: 1.6em;
+  color: #444;
 }
 
 .price {
   font-size: 1.2em;
   font-weight: bold;
   margin-top: 10px;
+  color: #01B8AA;
 }
 
 .contact {
