@@ -99,3 +99,22 @@ footer {
   background: #ffc20e;
   color: #000;
 }
+
+body {
+  background: linear-gradient(145deg, #fdf1ff, #e9f7ff, #e4fff1);
+  color: #333;
+}
+
+.hero {
+  background-position: center;
+  background-size: cover;
+}
+
+.card h3 {
+  color: #333;
+}
+
+.cta {
+  background-color: #ffc20e;
+  color: #000;
+}
