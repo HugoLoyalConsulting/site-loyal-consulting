@@ -3,78 +3,81 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Consultoria em Power BI com foco em dashboards responsivos, intuitivos e impactantes.">
   <title>Loyal Consulting</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="nav-container">
     <div class="logo">Loyal Consulting</div>
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <nav class="nav-links">
+    <nav class="menu">
+      <a href="#hero">Início</a>
       <a href="#benefits">Por que a Loyal?</a>
       <a href="#plans">Planos</a>
-      <a href="#portfolio">Portfólio</a>
       <a href="#contact">Contato</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Dashboards responsivos, intuitivos e que geram resultados.</h1>
-      <p>Transforme dados em decisões com visualizações claras, poderosas e acionáveis.</p>
-      <a href="#contact" class="cta">Fale Conosco</a>
+  <section class="hero" id="hero">
+    <h1>Dashboards que revelam oportunidades.</h1>
+    <p>Consultoria em Power BI com foco em performance, clareza e ação.</p>
+  </section>
+
+  <section class="benefits" id="benefits">
+    <div class="benefits-text">
+      <h2>Por que a Loyal Consulting?</h2>
+      <ul>
+        <li>Especialistas em BI com foco em resultado.</li>
+        <li>Dashboards responsivos, intuitivos e orientados à ação.</li>
+        <li>Consultoria personalizada e ágil.</li>
+      </ul>
     </div>
   </section>
 
-  <section id="benefits" class="benefits">
-    <h2>Por que a Loyal Consulting?</h2>
-    <p>Transformamos dados brutos em dashboards claros, responsivos e acionáveis que aceleram a performance da sua empresa.</p>
-  </section>
-
-  <section id="plans" class="plans">
+  <section class="plans" id="plans">
     <h2>Planos</h2>
     <div class="plan-cards">
       <div class="plan">
         <h3>Basic</h3>
         <ul>
-          <li>ETL simples</li>
-          <li>1 aba com até 6 visuais</li>
+          <li>ETL simples (Excel ou CSV)</li>
+          <li>1 aba de dashboard</li>
+          <li>Até 6 visuais</li>
           <li>Prazo: até 7 dias úteis</li>
-          <li>Preço: R$ 5.000 a R$ 10.000</li>
+          <li>Complexidade: baixa</li>
         </ul>
+        <div class="price">R$ 5.000 a R$ 10.000</div>
       </div>
       <div class="plan">
         <h3>Standard</h3>
         <ul>
-          <li>ETL moderado</li>
-          <li>2 a 3 abas com até 12 visuais</li>
-          <li>Prazo: 7 a 15 dias úteis</li>
-          <li>Preço: R$ 12.000 a R$ 18.000</li>
+          <li>ETL moderado (SQL ou várias fontes)</li>
+          <li>2 a 3 abas de dashboard</li>
+          <li>Até 12 visuais com interações</li>
+          <li>Prazo: 10 a 15 dias úteis</li>
+          <li>Complexidade: média</li>
         </ul>
+        <div class="price">R$ 12.000 a R$ 18.000</div>
       </div>
       <div class="plan">
         <h3>Premium</h3>
         <ul>
-          <li>ETL avançado e automações</li>
-          <li>Dashboards completos e estratégicos</li>
-          <li>Prazo: 15 dias úteis ou mais</li>
-          <li>Preço: a partir de R$ 20.000</li>
+          <li>ETL completo e automações</li>
+          <li>3+ abas com storytelling</li>
+          <li>20+ visuais com análises profundas</li>
+          <li>Prazo: a partir de 20 dias úteis</li>
+          <li>Complexidade: alta</li>
         </ul>
+        <div class="price">R$ 20.000+</div>
       </div>
     </div>
   </section>
 
-  <section id="portfolio" class="portfolio">
-    <h2>Dashboard em Destaque</h2>
-    <iframe title="Dashboard de Vendas e Finanças" width="100%" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9" frameborder="0" allowfullscreen="true"></iframe>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Entre em Contato</h2>
-    <a href="mailto:contato@loyalconsulting.com" class="cta">Enviar E-mail</a>
-    <a href="https://wa.me/5511954824181?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20do%20site%20da%20Loyal%2C%20gostaria%20de%20falar%20mais." class="cta whatsapp">Falar no WhatsApp</a>
+  <section class="contact" id="contact">
+    <h2>Contato</h2>
+    <a class="cta" href="mailto:contato@loyalconsulting.com">Enviar e-mail</a>
+    <a class="cta" href="https://wa.me/5511954824181?text=Olá,%20tudo%20bem?%20Vim%20do%20site%20da%20Loyal,%20gostaria%20de%20falar%20mais.">WhatsApp</a>
   </section>
 
   <footer>

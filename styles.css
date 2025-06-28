@@ -3,79 +3,62 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: #222;
-  background: linear-gradient(180deg, #00B5E2, #01B8AA, #7030A0);
+  background: linear-gradient(180deg, #074650, #009292, #FE6DB6, #FEB5DA, #480091, #B66DFF, #B5DAFE, #6DB6FF);
+  background-size: 1600% 1600%;
+  animation: gradientShift 60s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background: rgba(255,255,255,0.9);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
-  color: #7030A0;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
+  color: #480091;
 }
 
 nav a {
+  margin-left: 20px;
   text-decoration: none;
   color: #222;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .hero {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #009292, #B66DFF);
   text-align: center;
+  padding: 100px 20px;
+  background: rgba(255,255,255,0.9);
 }
 
-.hero h1 {
-  font-size: 2.2em;
+.benefits {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
 }
 
-.hero p {
-  font-size: 1.2em;
-}
-
-.cta {
-  display: inline-block;
-  background: #7030A0;
+.benefits-text {
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
 }
 
-.cta.whatsapp {
-  background: #25D366;
-}
-
-.benefits, .plans, .portfolio, .contact {
+.plans {
   padding: 60px 20px;
   text-align: center;
+  background: rgba(255,255,255,0.95);
 }
 
 .plan-cards {
@@ -89,56 +72,52 @@ nav a {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  flex: 1 1 280px;
-  max-width: 300px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  width: 300px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
 .plan h3 {
-  color: #7030A0;
+  color: #480091;
 }
 
 .plan ul {
+  list-style: disc;
   text-align: left;
-  padding-left: 20px;
-  color: #444;
+  margin-left: 20px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #009292;
+}
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #F2C811, #00B5E2);
+}
+
+.cta {
+  display: inline-block;
+  margin: 10px;
+  background: #480091;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer {
-  background: #eee;
-  padding: 20px;
   text-align: center;
-  font-size: 0.9em;
+  padding: 20px;
+  background: #eee;
 }
 
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .hero h1 {
-    font-size: 1.6em;
-  }
-
-  .hero p {
-    font-size: 1em;
-  }
-
   .plan-cards {
     flex-direction: column;
+    align-items: center;
   }
 }
