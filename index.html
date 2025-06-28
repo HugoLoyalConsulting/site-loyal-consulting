@@ -1,130 +1,100 @@
 
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Consultoria em Power BI com dashboards responsivos, intuitivos e de alta performance.">
-  <title>Loyal Consulting</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Consultoria em Power BI com dashboards responsivos, intuitivos e de alta performance." name="description"/>
+<title>Loyal Consulting</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="nav-container">
-    <div class="logo">Loyal Consulting</div>
-    <nav>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#plans">Planos</a>
-      <a href="#contact">Contato</a>
-    </nav>
-  </header>
+<header class="nav-container">
+<div class="logo">Loyal Consulting</div>
+</header>
+<section class="hero">
+<header class="nav-container">
+<div class="logo">Loyal Consulting</div>
+<input id="menu-toggle" type="checkbox"/>
+<label class="menu-icon" for="menu-toggle">☰</label>
+<nav class="nav">
+<a href="#benefits">Por que a Loyal</a>
+<a href="#portfolio">Portfólio</a>
+<a href="#plans">Planos</a>
+<a href="#contact">Contato</a>
+</nav>
+</header>
+<div class="container">
+<h1>Dashboards responsivos, intuitivos e que geram resultados.</h1>
+<p>Transforme dados em decisões com dashboards claros, responsivos e poderosos.</p>
+<a class="cta" href="#contact">Solicitar Orçamento</a>
+</div>
+</section>
+<section class="benefits-bg">
+<div class="benefits-text">
+<h2>Por que a Loyal Consulting?</h2>
+<p>Dashboards que priorizam clareza visual, performance real e insights acionáveis para escalar resultados com agilidade.</p>
+</div>
+</section>
+<section class="portfolio" id="portfolio">
+<div class="container">
+<h2>Dashboard em Destaque</h2>
+<iframe allowfullscreen="true" frameborder="0" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9" title="Dashboard de Vendas e Finanças" width="100%"></iframe>
+</div>
+</section>
+<section class="plans" id="plans">
+<div class="container">
+<h2>Planos</h2>
+<div class="plan-cards">
+<div class="plan">
+<h3>Basic</h3>
+<ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+<li>Até 2 fontes de dados simples</li>
+<li>ETL leve com Power Query</li>
+<li>Até 2 abas com 6 a 8 visuais</li>
+<li>Prazo: até 7 dias úteis</li>
+<li>Complexidade: baixa</li>
+</ul>
+<div class="price">R$ 5.000 a R$ 10.000</div>
+</div>
+<div class="plan">
+<h3>Standard</h3>
+<ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+<li>Até 5 fontes de dados heterogêneas</li>
+<li>ETL moderado (tratamentos e junções)</li>
+<li>Até 4 abas com 10 a 15 visuais interativos</li>
+<li>Prazo: até 14 dias úteis</li>
+<li>Complexidade: média</li>
+</ul>
+<div class="price">R$ 12.000 a R$ 18.000</div>
+</div>
+<div class="plan">
+<h3>Premium</h3>
+<ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+<li>Fontes de dados ilimitadas (inclusive APIs)</li>
+<li>ETL avançado com automações</li>
+<li>6+ abas com 20+ visuais sofisticados</li>
+<li>Prazo: sob consulta (customizado)</li>
+<li>Complexidade: alta e adaptada ao negócio</li>
+</ul>
+<div class="price">R$ 20.000 ou mais</div>
+</div>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Dashboards responsivos, intuitivos e que geram resultados.</h1>
-      <p>Transforme dados em decisões com dashboards claros, responsivos e poderosos.</p>
-      <a href="#contact" class="cta">Solicitar Orçamento</a>
-    </div>
-  </section>
 
-  <section class="benefits-bg">
-    <div class="benefits-text">
-      <h2>Por que a Loyal Consulting?</h2>
-      <p>Dashboards que priorizam clareza visual, performance real e insights acionáveis para escalar resultados com agilidade.</p>
-    </div>
-  </section>
 
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2>Dashboard em Destaque</h2>
-      <iframe title="Dashboard de Vendas e Finanças" width="100%" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
-  </section>
-
-  <section class="plans" id="plans">
-    <div class="container">
-      <h2>Planos</h2>
-      <div class="plan-cards">
-
-    <div class="plan">
-      <h3>Basic</h3>
-      <ul>
-        <li>Até 2 fontes de dados simples</li>
-        <li>ETL leve com Power Query</li>
-        <li>Até 2 abas com 6 a 8 visuais</li>
-        <li>Prazo: até 7 dias úteis</li>
-        <li>Complexidade: baixa</li>
-      </ul>
-      <div class="price">R$ 5.000 a R$ 10.000</div>
-    </div>
-
-    <div class="plan">
-      <h3>Standard</h3>
-      <ul>
-        <li>Até 5 fontes de dados heterogêneas</li>
-        <li>ETL moderado (tratamentos e junções)</li>
-        <li>Até 4 abas com 10 a 15 visuais interativos</li>
-        <li>Prazo: até 14 dias úteis</li>
-        <li>Complexidade: média</li>
-      </ul>
-      <div class="price">R$ 12.000 a R$ 18.000</div>
-    </div>
-
-    <div class="plan">
-      <h3>Premium</h3>
-      <ul>
-        <li>Fontes de dados ilimitadas (inclusive APIs)</li>
-        <li>ETL avançado com automações</li>
-        <li>6+ abas com 20+ visuais sofisticados</li>
-        <li>Prazo: sob consulta (customizado)</li>
-        <li>Complexidade: alta e adaptada ao negócio</li>
-      </ul>
-      <div class="price">R$ 20.000 ou mais</div>
-    </div>
-
-        <div class="plan">
-          <h3>Basic</h3>
-          <ul>
-            <li>Até 2 abas</li>
-            <li>Até 6 visuais</li>
-            <li>ETL simples (Excel/CSV)</li>
-            <li>Prazo: até 7 dias úteis</li>
-          </ul>
-          <div class="price">R$5.000 a R$10.000</div>
-        </div>
-        <div class="plan">
-          <h3>Standard</h3>
-          <ul>
-            <li>Até 4 abas</li>
-            <li>Até 12 visuais</li>
-            <li>ETL intermediário (SQL)</li>
-            <li>Prazo: até 15 dias úteis</li>
-          </ul>
-          <div class="price">R$12.000 a R$18.000</div>
-        </div>
-        <div class="plan">
-          <h3>Premium</h3>
-          <ul>
-            <li>Abas ilimitadas</li>
-            <li>Visuais avançados e IA</li>
-            <li>ETL avançado (Dataflows/API)</li>
-            <li>Prazo: sob consulta</li>
-          </ul>
-          <div class="price">R$20.000+</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contato</h2>
-      <a class="cta" href="mailto:contato@loyalconsulting.com.br">Enviar e-mail</a>
-      <a class="cta" href="https://wa.me/5511954824181?text=Boa%20tarde!%20Tudo%20bem?" target="_blank">Falar no WhatsApp</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Loyal Consulting. Todos os direitos reservados.</p>
-  </footer>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<h2>Contato</h2>
+<a class="cta" href="mailto:contato@loyalconsulting.com.br">Enviar e-mail</a>
+<a class="cta" href="https://wa.me/5511954824181?text=Boa%20tarde!%20Tudo%20bem?" target="_blank">Falar no WhatsApp</a>
+</div>
+</section>
+<footer>
+<p>© 2025 Loyal Consulting. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
