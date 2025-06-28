@@ -1,224 +1,55 @@
 
-* { margin:0; padding:0; box-sizing:border-box; }
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ff9aee, #9afff8, #b692ff);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background: #ffffff;
   color: #333;
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+section {
+  padding: 60px 20px;
 }
 
-
-
-.container { max-width:900px; margin:0 auto; padding:60px 20px; }
-
-
-.hero h1 {
-  font-size:3rem;
-  text-shadow:0 0 10px rgba(0,0,0,0.7);
-}
-.sub {
-  font-size:1.2rem;
-  margin:15px 0 30px;
-}
-.cta {
-  display:inline-block;
-  background:#ffc20e;
-  color:#000;
-  padding:15px 35px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:700;
-  transition:background .3s ease;
-}
-.cta:hover { background:#f29e00; }
-
-h2 { font-size:2rem; margin-bottom:25px; }
-ul { list-style:none; padding:0; }
-
-.img-section img {
-  max-width:100%;
-  display:block;
-  margin:0 auto;
-  border-radius:8px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+.hero {
+  background: linear-gradient(135deg, #F2C811, #01B8AA);
+  text-align: center;
+  padding: 100px 20px;
+  color: #222;
 }
 
-.cards {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
-}
-.card {
-  background:#fff;
-  border-radius:12px;
-  padding:30px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.1);
-  flex:1 1 250px;
-  transition:transform .3s, box-shadow .3s;
-}
-.card:hover {
-  transform:translateY(-5px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
-.card h3 { font-size:1.4rem; color:#3a3a3a; }
-.price { font-size:1.1rem; color:#666; margin:10px 0 20px; }
-.card ul li {
-  margin-bottom:10px;
-  font-size:0.95rem;
-  text-align:left;
+.hero h1, .hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  border-radius: 8px;
 }
 
-footer {
-  text-align:center;
-  background:#222;
-  color:#ccc;
-  padding:30px;
-  font-size:0.9rem;
-}
-
-/* .overlay removed */
-  background-color: rgba(0,0,0,0.55);
-  padding: 80px 0;
-}
-.hero h1, .hero .sub {
+.services {
+  background: linear-gradient(135deg, #00B5E2, #005D8F);
   color: #fff;
-  text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
-.portfolio p, .planos p, .sobre p, .contato p {
-  max-width: 700px;
-  margin: 0 auto 30px;
-  font-size: 1rem;
-  color: #333;
+.portfolio {
+  background: linear-gradient(135deg, #7030A0, #01B8AA);
 }
 
-.card:hover {
-  background: #ffc20e;
-  color: #000;
-}
-
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ff9aee, #9afff8, #b692ff);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #333;
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
-
-
-
-
-.card h3 {
-  color: #333;
-}
-
-.cta {
-  background-color: #ffc20e;
-  color: #000;
-}
-
-.hero h1, .hero .sub {
-  color: #2c2c2c;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-}
-
-.cta {
-  background: #a100ff;
-  color: white;
-  border: none;
-  font-weight: 600;
-}
-
-.cta:hover {
-  background: #ffc20e;
-  color: black;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-  color: #2c2c2c;
-}
-
-footer {
-  background: #f0f0f0;
-  color: #444;
-  padding: 30px 0;
+.contact {
+  background-color: #f9f9f9;
 }
 
 .container {
   max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
   text-align: center;
 }
 
-p {
-  line-height: 1.5;
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-}
-
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ff9aee, #9afff8, #b692ff);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #333;
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
-
-
-section {
-  padding: 60px 0;
-}
-
-section h2 {
-  margin-bottom: 1rem;
-  animation: fadeInUp 1s ease both;
-}
-
-.card {
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.02);
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 1.1rem;
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  font-size: 1.1em;
+  line-height: 1.6;
 }
