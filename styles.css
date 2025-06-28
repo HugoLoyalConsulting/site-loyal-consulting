@@ -3,15 +3,7 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: #222;
-  background: linear-gradient(180deg, #074650, #009292, #FE6DB6, #FEB5DA, #480091, #B66DFF, #B5DAFE, #6DB6FF);
-  background-size: 1600% 1600%;
-  animation: gradientShift 60s ease infinite;
-}
-
-@keyframes gradientShift {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+  background: linear-gradient(180deg, #00B5E2, #01B8AA, #7030A0);
 }
 
 .nav-container {
@@ -19,13 +11,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255,255,255,0.8);
 }
 
 .logo {
   font-size: 1.6em;
   font-weight: bold;
-  color: #480091;
+  color: #7030A0;
 }
 
 nav a {
@@ -35,89 +27,116 @@ nav a {
   font-weight: 600;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
 .hero {
-  text-align: center;
+  background: linear-gradient(135deg, #F2C811, #01B8AA);
+  color: #222;
   padding: 100px 20px;
-  background: rgba(255,255,255,0.9);
 }
 
-.benefits {
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
 }
 
-.benefits-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 600px;
-}
-
-.plans {
-  padding: 60px 20px;
-  text-align: center;
-  background: rgba(255,255,255,0.95);
-}
-
-.plan-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.plan {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-}
-
-.plan h3 {
-  color: #480091;
-}
-
-.plan ul {
-  list-style: disc;
-  text-align: left;
-  margin-left: 20px;
-}
-
-.price {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #009292;
-}
-
-.contact {
-  padding: 60px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #F2C811, #00B5E2);
+.hero p {
+  font-size: 1.25em;
+  margin-bottom: 20px;
 }
 
 .cta {
-  display: inline-block;
-  margin: 10px;
-  background: #480091;
-  color: white;
-  padding: 12px 20px;
+  background-color: #7030A0;
+  color: #fff;
+  padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #eee;
+.benefits-bg {
+  display: flex;
+  background: url("pexels-tima-miroshnichenko-7567525.jpg") no-repeat center center/cover;
+  height: 400px;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
 }
 
-@media (max-width: 768px) {
-  .plan-cards {
-    flex-direction: column;
-    align-items: center;
-  }
+.benefits-text {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #222;
+  padding: 30px;
+  margin-left: 40px;
+  width: 33%;
+  border-radius: 12px;
+}
+
+.benefits-text h2 {
+  margin-top: 0;
+}
+
+.portfolio {
+  background: linear-gradient(135deg, #7030A0, #01B8AA);
+  color: #fff;
+}
+
+.plans {
+  background: linear-gradient(135deg, #fdfdfd, #f4f4f4);
+}
+
+.plan-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.plan {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: scale(1.03);
+}
+
+.plan h3 {
+  color: #7030A0;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95em;
+  line-height: 1.6em;
+  color: #444;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #01B8AA;
+}
+
+.contact {
+  background: linear-gradient(135deg, #F2C811, #00B5E2);
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
