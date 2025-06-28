@@ -139,28 +139,29 @@ nav a:hover {
 }
 
 .plan-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
-  align-items: stretch;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 32px !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  width: 100% !important;
 }
 
 .plan {
-  background: #FFFFFFF7;
-  box-shadow: 0 2px 16px 0 rgba(7,70,80,0.04);
-  border-radius: 16px;
-  flex: 1 1 260px;
-  max-width: 320px;
-  min-width: 260px;
-  margin: 0 auto;
-  padding: 40px 24px 32px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
+  background: #FFFFFFF7 !important;
+  box-shadow: 0 2px 16px 0 rgba(7,70,80,0.04) !important;
+  border-radius: 16px !important;
+  flex: 1 1 260px !important;
+  max-width: 320px !important;
+  min-width: 260px !important;
+  margin: 0 auto !important;
+  padding: 40px 24px 32px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  height: 100% !important;
 }
 
 .plan:hover {
@@ -298,13 +299,14 @@ section:last-of-type {
   }
   .plan-cards {
     flex-direction: column !important;
-    gap: 24px;
-    align-items: center;
+    gap: 24px !important;
+    align-items: center !important;
   }
   .plan {
-    max-width: 95vw;
-    min-width: 0;
-    width: 100%;
+    max-width: 95vw !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    flex: none !important;
   }
   .nav-container {
     flex-direction: column;
@@ -490,4 +492,37 @@ section:last-of-type {
   30% { box-shadow: 0 0 0 8px #FE6DB644; }
   60% { box-shadow: 0 0 0 16px #FE6DB622; }
   100% { box-shadow: 0 0 0 0 #FE6DB600; }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 10px !important;
+  }
+  .hero {
+    padding: 80px 10px !important;
+  }
+  .contact {
+    padding: 80px 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 5px !important;
+  }
+  .hero h1 {
+    font-size: 1.8em !important;
+  }
+  .plan {
+    padding: 20px 15px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 15px 2px !important;
+  }
+  .hero h1 {
+    font-size: 1.5em !important;
+  }
 }
