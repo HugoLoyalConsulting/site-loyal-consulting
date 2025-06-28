@@ -550,3 +550,36 @@ section:last-of-type {
     font-size: 1.5em !important;
   }
 }
+
+.plan, .benefits-text, .tally-embed-wrapper {
+  background: #fff !important;
+  color: #222 !important;
+}
+.plan h3, .benefits-text h2 {
+  color: #480091 !important;
+}
+.price {
+  color: #009292 !important;
+}
+.hero, .benefits-bg, .portfolio, .plans, .contact {
+  color: #074650 !important;
+}
+.cta {
+  background: #480091 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 2px 8px 0 rgba(72,0,145,0.10);
+}
+.cta:hover {
+  background: #7030A0 !important;
+  color: #fff !important;
+}
+.whatsapp-btn {
+  background: #01B8AA !important;
+  color: #fff !important;
+  border: none !important;
+}
+.whatsapp-btn:hover {
+  background: #009292 !important;
+  color: #fff !important;
+}
