@@ -1,85 +1,104 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Loyal Consulting</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="nav-container">
     <div class="logo">Loyal Consulting</div>
-    <nav id="menu">
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu-items">
-        <li><a href="#why">Por que a Loyal</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#plans">Planos</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
+    <nav class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#hero">Início</a>
+        <a href="#benefits">Por que a Loyal?</a>
+        <a href="#plans">Planos</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contato</a>
+      </div>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Dashboards responsivos, intuitivos e que geram resultados.</h1>
-  </section>
-
-  <section id="portfolio">
-    <h2>Dashboard em Destaque</h2>
-    <img src="https://raw.githubusercontent.com/hugoleal2/lconsulting.github.io/main/dashboard.png" alt="Dashboard" />
-  </section>
-
-  <section id="plans">
-    <h2>Planos</h2>
-    <div class="plans-container">
-      <div class="plan-card">
-        <h3>Basic</h3>
-        <ul>
-          <li>Até 2 fontes de dados simples</li>
-          <li>ETL leve com Power Query</li>
-          <li>Até 2 abas com 6 a 8 visuais</li>
-          <li>Prazo: até 7 dias úteis</li>
-          <li>Complexidade: baixa</li>
-        </ul>
-        <p class="price">R$ 5.000 a R$ 10.000</p>
-      </div>
-      <div class="plan-card">
-        <h3>Standard</h3>
-        <ul>
-          <li>Até 5 fontes de dados heterogêneas</li>
-          <li>ETL moderado (tratamentos e junções)</li>
-          <li>Até 4 abas com 10 a 15 visuais</li>
-          <li>Prazo: até 14 dias úteis</li>
-          <li>Complexidade: média</li>
-        </ul>
-        <p class="price">R$ 12.000 a R$ 18.000</p>
-      </div>
-      <div class="plan-card">
-        <h3>Premium</h3>
-        <ul>
-          <li>Fontes de dados ilimitadas (inclusive APIs)</li>
-          <li>ETL avançado com automações</li>
-          <li>6+ abas com 20+ visuais sofisticados</li>
-          <li>Prazo: sob consulta</li>
-          <li>Complexidade: alta e adaptada ao negócio</li>
-        </ul>
-        <p class="price">R$ 20.000 ou mais</p>
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-box">
+        <h1>Dashboards responsivos, intuitivos e que geram resultados.</h1>
+        <p>Transforme dados em decisões com dashboards claros, responsivos e poderosos.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contato</h2>
-    <div class="contact-buttons">
-      <a href="mailto:contato@loyal.com" class="btn">Enviar e-mail</a>
-      <a href="https://wa.me/5511954824181?text=Boa%20tarde!%20Tudo%20bem?" class="btn whatsapp">Falar no WhatsApp</a>
+  <section class="benefits-bg" id="benefits">
+    <div class="benefits-text">
+      <h2>Por que a Loyal Consulting?</h2>
+      <ul>
+        <li>Especialistas em visualização de dados para tomada de decisão.</li>
+        <li>Dashboards com storytelling e foco em resultado.</li>
+        <li>Prazo curto e entrega iterativa com validações semanais.</li>
+        <li>Suporte completo e flexibilidade contratual.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="plans" id="plans">
+    <div class="container">
+      <h2>Nossos Planos</h2>
+      <div class="plan-cards">
+        <div class="plan">
+          <h3>Basic</h3>
+          <ul>
+            <li>ETL leve (Excel/CSV)</li>
+            <li>1 aba / até 5 visuais</li>
+            <li>Prazo: até 7 dias úteis</li>
+          </ul>
+          <div class="price">R$ 5.000 a R$ 10.000</div>
+        </div>
+        <div class="plan">
+          <h3>Standard</h3>
+          <ul>
+            <li>ETL moderado (SQL/Power Query)</li>
+            <li>2 a 3 abas / até 12 visuais</li>
+            <li>Prazo: 10 a 15 dias úteis</li>
+          </ul>
+          <div class="price">R$ 12.000 a R$ 18.000</div>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <ul>
+            <li>ETL avançado + automações</li>
+            <li>4+ abas / dashboards gerenciais</li>
+            <li>Prazo: 20+ dias úteis</li>
+          </ul>
+          <div class="price">R$ 20.000+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2>Dashboard em Destaque</h2>
+      <iframe title="Dashboard de Vendas e Finanças"
+              width="100%" height="400"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9"
+              frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contato</h2>
+      <a href="mailto:contato@loyalconsulting.com" class="cta">Enviar e-mail</a>
+      <a href="https://api.whatsapp.com/send?phone=5511954824181&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20do%20site%20da%20Loyal%2C%20gostaria%20de%20falar%20mais." class="cta whatsapp-btn">Falar no WhatsApp</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Loyal Consulting. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Loyal Consulting. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
