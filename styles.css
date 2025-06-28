@@ -121,9 +121,9 @@ nav a:hover {
   color: #074650;
   padding: 40px 24px;
   margin: 0 auto;
-  width: 28%;
-  min-width: 260px;
-  max-width: 400px;
+  width: 34%;
+  min-width: 312px;
+  max-width: 480px;
   border-radius: 16px;
   box-shadow: 0 2px 16px 0 rgba(7,70,80,0.04);
   margin-left: 0;
@@ -166,8 +166,9 @@ nav a:hover {
   padding: 40px 24px 32px 24px !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  min-height: 308px !important;
   height: 100% !important;
 }
 
@@ -177,8 +178,11 @@ nav a:hover {
 
 .plan h3 {
   color: #480091;
-  margin-bottom: 18px;
-  text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+  text-align: center !important;
+  align-self: center !important;
+  width: 100%;
 }
 
 .plan ul {
@@ -187,20 +191,22 @@ nav a:hover {
   font-size: 0.95em;
   line-height: 1.6em;
   color: #444;
-  flex-grow: 1;
+  flex-grow: 1 !important;
+  width: 100%;
   text-align: left;
-  align-self: stretch;
   margin: 0 0 0 0;
+  align-self: stretch;
 }
 
 .price {
   color: #009292;
   font-size: 1.2em;
   font-weight: bold;
-  margin-top: 24px;
-  margin-bottom: 0;
-  align-self: center;
-  text-align: center;
+  margin-top: 24px !important;
+  margin-bottom: 0 !important;
+  align-self: center !important;
+  text-align: center !important;
+  width: 100%;
 }
 
 .contact {
@@ -350,11 +356,9 @@ section:last-of-type {
     padding-left: 0;
   }
   .benefits-text {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 95vw;
+    width: 96%;
+    max-width: 99vw;
     min-width: 0;
-    padding: 24px 10px;
   }
   body {
     padding-top: 110px;
@@ -505,13 +509,13 @@ section:last-of-type {
 
 /* Animação de realce para o embed do Tally.so */
 .highlight-tally {
-  animation: highlightTally 1.2s ease;
+  animation: highlightTally 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @keyframes highlightTally {
-  0% { box-shadow: 0 0 0 0 #FE6DB6; }
-  30% { box-shadow: 0 0 0 8px #FE6DB644; }
-  60% { box-shadow: 0 0 0 16px #FE6DB622; }
-  100% { box-shadow: 0 0 0 0 #FE6DB600; }
+  0% { box-shadow: 0 0 0 0 #FE6DB6, 0 0 24px 8px #FE6DB6; }
+  40% { box-shadow: 0 0 0 12px #FE6DB644, 0 0 32px 16px #FE6DB6; }
+  80% { box-shadow: 0 0 0 0 #FE6DB600, 0 0 0 0 #FE6DB600; }
+  100% { box-shadow: none; }
 }
 
 @media (max-width: 768px) {

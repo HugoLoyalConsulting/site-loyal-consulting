@@ -139,14 +139,27 @@
   // Animação de realce no Tally.so ao clicar em 'Solicite um orçamento'
   document.querySelectorAll('.cta[href="#planos"], .cta[href="#contato"]').forEach(btn => {
     btn.addEventListener('click', function(e) {
+      const contatoSection = document.getElementById('contato');
       const tally = document.querySelector('.tally-embed-wrapper');
-      if (tally) {
-        setTimeout(() => {
-          tally.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          tally.classList.remove('highlight-tally');
-          void tally.offsetWidth; // reflow para reiniciar animação
-          tally.classList.add('highlight-tally');
-        }, 200);
+      if (contatoSection) {
+        const rect = contatoSection.getBoundingClientRect();
+        const inView = rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+        if (!inView) {
+          setTimeout(() => {
+            contatoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (tally) {
+              tally.classList.remove('highlight-tally');
+              void tally.offsetWidth;
+              tally.classList.add('highlight-tally');
+            }
+          }, 200);
+        } else {
+          if (tally) {
+            tally.classList.remove('highlight-tally');
+            void tally.offsetWidth;
+            tally.classList.add('highlight-tally');
+          }
+        }
       }
     });
   });
