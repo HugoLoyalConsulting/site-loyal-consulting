@@ -1,0 +1,1 @@
+// JS simples para navegação mobile

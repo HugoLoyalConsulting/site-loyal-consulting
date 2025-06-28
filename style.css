@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #0ff 0%, #0ff0ff 50%, #90f 100%);
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0f7fa;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+nav .menu-items {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: transparent;
+  font-size: 1.5em;
+}
+
+#portfolio img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.plan-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.plan-card h3 {
+  color: #6a1b9a;
+}
+
+.plan-card .price {
+  font-weight: bold;
+  color: #00bfa5;
+}
+
+#contact {
+  text-align: center;
+  padding: 30px 10px;
+  background: linear-gradient(to right, #ffee58, #00e5ff, #8e24aa);
+}
+
+.contact-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: white;
+  background: #6a1b9a;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.contact-buttons .btn.whatsapp {
+  background: #25d366;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f0f0f0;
+  font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .menu-items {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu-items {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
