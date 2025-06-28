@@ -1,106 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Consultoria em Power BI com dashboards impactantes e decisões baseadas em dados." />
-  <title>Loyal Consulting - Power BI</title>
+  <title>Loyal Consulting</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="nav-container">
-      <div class="logo">Loyal Consulting</div>
-      <nav>
-        <a href="#benefits">Benefícios</a>
-        <a href="#portfolio">Dashboard</a>
-        <a href="#planos">Planos</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
+  <header class="nav-container">
+    <div class="logo">Loyal Consulting</div>
+    <nav>
+      <a href="#benefits">Por que a Loyal</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#plans">Planos</a>
+      <a href="#contact">Contato</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1>Dashboards que revelam oportunidades.</h1>
-      <p>Transforme dados em decisões com visualizações claras, responsivas e que geram ação.</p>
-      <a href="#planos" class="cta">Solicite um orçamento</a>
+    <h1>Dashboards responsivos, intuitivos e que geram resultados.</h1>
+    <p>Transforme dados em decisões com dashboards claros, responsivos e poderosos.</p>
+    <a href="#contact" class="cta">Solicite um orçamento</a>
+  </section>
+
+  <section id="benefits" class="benefits-bg">
+    <div class="benefits-text">
+      <h2>Por que a Loyal Consulting?</h2>
+      <ul>
+        <li>Especialistas em Power BI com foco em negócios</li>
+        <li>Design intuitivo e responsivo para qualquer dispositivo</li>
+        <li>Implantação rápida e suporte contínuo</li>
+      </ul>
     </div>
   </section>
 
-  <section class="benefits" id="benefits">
-    <div class="benefits-bg">
-      <div class="benefits-text">
-        <h2>Por que a Loyal Consulting?</h2>
+  <section id="portfolio" class="portfolio container">
+    <h2>Dashboard em Destaque</h2>
+    <iframe title="Dashboard de Vendas e Finanças" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9" frameborder="0" allowFullScreen="true"></iframe>
+  </section>
+
+  <section id="plans" class="plans container">
+    <h2>Planos de Serviço</h2>
+    <div class="plan-cards">
+      <div class="plan">
+        <h3>Basic</h3>
         <ul>
-          <li>Dashboards responsivos, intuitivos e impactantes</li>
-          <li>ETL automatizado com integração com Excel, ERP, CRMs e APIs</li>
-          <li>Indicadores estratégicos e táticos</li>
-          <li>Experiência com empresas de médio a grande porte</li>
+          <li>ETL leve</li>
+          <li>1 aba / até 6 visuais</li>
+          <li>Entrega em até 7 dias úteis</li>
+          <li>Suporte por e-mail</li>
         </ul>
+        <p class="price">R$ 5.000 a 10.000</p>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <ul>
+          <li>ETL moderado com validações</li>
+          <li>2 a 3 abas / até 12 visuais</li>
+          <li>Entrega em até 10 dias úteis</li>
+          <li>Suporte por call semanal</li>
+        </ul>
+        <p class="price">R$ 12.000 a 18.000</p>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <ul>
+          <li>ETL avançado (multi-fonte)</li>
+          <li>Dashboards interativos, 4+ abas</li>
+          <li>Entrega personalizada</li>
+          <li>Suporte contínuo + treinamentos</li>
+        </ul>
+        <p class="price">R$ 20.000+</p>
       </div>
     </div>
   </section>
 
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2>Exemplo de Dashboard</h2>
-      <iframe title="Dashboard de Vendas e Finanças" width="100%" height="480" src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9" frameborder="0" allowfullscreen="true"></iframe>
-    </div>
-  </section>
-
-  <section class="plans" id="planos">
-    <div class="container">
-      <h2>Planos</h2>
-      <div class="plan-cards single-line">
-        <div class="plan">
-          <h3>Basic</h3>
-          <ul>
-            <li>Até 3 abas e 12 visuais</li>
-            <li>Sem ETL automatizado</li>
-            <li>Fontes: Excel ou Sheets</li>
-            <li>Entrega: até 7 dias úteis</li>
-          </ul>
-          <p class="price">R$ 5.000 a R$ 10.000</p>
-        </div>
-        <div class="plan">
-          <h3>Standard</h3>
-          <ul>
-            <li>Até 5 abas e 20 visuais</li>
-            <li>ETL básico com Power Query</li>
-            <li>Integrações com planilhas, ERPs e bancos SQL</li>
-            <li>Entrega: até 10 dias úteis</li>
-          </ul>
-          <p class="price">R$ 12.000 a R$ 18.000</p>
-        </div>
-        <div class="plan">
-          <h3>Premium</h3>
-          <ul>
-            <li>Abas e visuais ilimitados</li>
-            <li>ETL robusto e automações em Python/API</li>
-            <li>Modelos analíticos e visões executivas</li>
-            <li>Entrega: até 15 dias úteis</li>
-          </ul>
-          <p class="price">R$ 20.000+</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contato">
-    <div class="container">
-      <h2>Vamos conversar?</h2>
-      <p>Entre em contato para agendar uma reunião de diagnóstico gratuita.</p>
-      <a href="#planos" class="cta">Solicitar orçamento</a>
-    </div>
+  <section id="contact" class="contact container">
+    <h2>Entre em Contato</h2>
+    <p>Envie um e-mail para <strong>contato@loyalconsulting.com.br</strong> ou nos chame pelo WhatsApp para uma proposta sob medida.</p>
   </section>
 
   <footer>
-    <div class="container">
-      <p>© 2025 Loyal Consulting. Todos os direitos reservados.</p>
-    </div>
+    © 2025 Loyal Consulting. Todos os direitos reservados.
   </footer>
 </body>
 </html>

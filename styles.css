@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -69,8 +68,8 @@ nav a {
 }
 
 .benefits-text {
-  background-color: rgba(0, 0, 0, 0.75); /* fundo preto com 75% de opacidade */
-  color: #fff;                          /* texto branco */
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
   padding: 30px;
   margin-left: 40px;
   width: 33%;
@@ -139,4 +138,32 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .plan-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-bg {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .benefits-text {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
 }
