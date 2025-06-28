@@ -13,17 +13,17 @@
 </head>
 <body>
   <header class="hero" style="background-image: url('pexels-kampus-8353798.jpg');">
-    <div class="container" style="background: rgba(255, 255, 255, 0.85); padding: 2rem; border-radius: 8px; margin-top: 60px;">
-      <div class="container">
+    <div class="container" style="max-width: 860px; margin: auto; text-align: center;" style="background: rgba(255, 255, 255, 0.85); padding: 2rem; border-radius: 8px; margin-top: 60px;">
+      <div class="container" style="max-width: 860px; margin: auto; text-align: center;">
         <h1>Dashboards responsivos, intuitivos e que geram resultados.</h1>
-        <p class="sub">Transforme dados em decisões com visualizações claras, responsivas e poderosas.</p>
+        <p class="sub">Transforme dados em decisões com dashboards claros,<br>responsivos e poderosos.</p>
         <a href="#planos" class="cta">Conhecer os Planos</a>
       </div>
     </div>
   </header>
 
   <section class="sobre">
-    <div class="container">
+    <div class="container" style="max-width: 860px; margin: auto; text-align: center;">
       <h2>Por que a Loyal?</h2>
       <p>Aliamos design estratégico, inteligência analítica e tecnologia para entregar dashboards que qualquer gestor entende — e age. Atuamos com foco em performance, visual acessível (incluindo daltonismo), storytelling visual e insights acionáveis.</p>
     </div>
@@ -33,8 +33,8 @@
     <img src="pexels-fauxels-3183150.jpg" alt="Equipe Loyal Consulting trabalhando" />
   </section>
 
-  <section class="portfolio" style="background-color: #f5f5f5; padding: 60px 0;">
-    <div class="container">
+  <section class="portfolio reveal" style="background-color: #f5f5f5; padding: 60px 0;">
+    <div class="container" style="max-width: 860px; margin: auto; text-align: center;">
       <h2>Dashboard em Ação</h2>
       <p>Exemplo real: dados financeiros e comerciais transformados em estratégia.</p>
       <iframe title="Dashboard de Vendas e Finanças" width="100%" height="540" src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9" frameborder="0" allowFullScreen="true"></iframe>
@@ -42,7 +42,7 @@
   </section>
 
   <section id="planos" class="planos">
-    <div class="container">
+    <div class="container" style="max-width: 860px; margin: auto; text-align: center;">
       <h2>Planos sob medida</h2>
       <p>Escolha o plano ideal para seu momento. Ou fale conosco e criamos uma proposta exclusiva para sua realidade.</p>
       <div class="cards">
@@ -84,7 +84,7 @@
   </section>
 
   <section class="contato">
-    <div class="container">
+    <div class="container" style="max-width: 860px; margin: auto; text-align: center;">
       <h2>Vamos conversar?</h2>
       <p>Fale com nosso time e receba um diagnóstico gratuito. Resposta em até 1 dia útil.</p>
       <a href="mailto:contato@loyalconsulting.com" class="cta">Solicitar proposta</a>
@@ -92,9 +92,21 @@
   </section>
 
   <footer>
-    <div class="container">
+    <div class="container" style="max-width: 860px; margin: auto; text-align: center;">
       <p>&copy; 2025 Loyal Consulting • Dashboards de Alto Impacto em Power BI</p>
     </div>
   </footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.querySelectorAll('.reveal').forEach(function(el) {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add('active');
+    }
+  });
+});
+</script>
 </body>
+
 </html>
