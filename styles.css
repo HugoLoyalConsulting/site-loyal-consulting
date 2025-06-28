@@ -78,3 +78,24 @@ footer {
   padding:30px;
   font-size:0.9rem;
 }
+
+.overlay {
+  background-color: rgba(0,0,0,0.55);
+  padding: 80px 0;
+}
+.hero h1, .hero .sub {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.portfolio p, .planos p, .sobre p, .contato p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.card:hover {
+  background: #ffc20e;
+  color: #000;
+}
