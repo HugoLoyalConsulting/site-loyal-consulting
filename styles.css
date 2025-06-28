@@ -1,48 +1,79 @@
-
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #222;
-  background: linear-gradient(180deg, #00B5E2, #01B8AA, #7030A0);
+  color: #074650;
+  background: #F8FBFC;
+  padding-top: 80px;
+}
+
+header {
+  width: 100%;
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 2px 12px 0 rgba(7,70,80,0.03);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: rgba(255,255,255,0.8);
+  padding: 20px 24px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.5em;
 }
 
 .logo {
   font-size: 1.6em;
   font-weight: bold;
-  color: #7030A0;
+  color: #480091;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
 }
 
 nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #222;
+  color: #074650;
   font-weight: 600;
+  margin-left: 18px;
+  margin-right: 0;
+  transition: color 0.2s;
+  text-align: center;
+  font-size: 0.98em;
+}
+nav a:first-child {
+  margin-left: 0;
+}
+nav a:hover {
+  color: #FE6DB6;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 64px 20px 64px 20px;
   text-align: center;
 }
 
 .hero {
-  background: linear-gradient(135deg, #F2C811, #01B8AA);
-  color: #222;
-  padding: 100px 20px;
+  background: linear-gradient(135deg, #D6F0F4 0%, #F4D6EC 100%);
+  color: #074650;
+  padding: 120px 20px 120px 20px;
 }
 
 .hero h1 {
   font-size: 2.8em;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+  color: #009292;
 }
 
 .hero p {
@@ -51,30 +82,45 @@ nav a {
 }
 
 .cta {
-  background-color: #7030A0;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 6px;
+  background-color: #FE6DB622;
+  color: #480091;
+  padding: 14px 32px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px 0 rgba(254,109,182,0.08);
+  border: 1px solid #FE6DB6;
+}
+.cta:hover {
+  background-color: #FE6DB6;
+  color: #fff;
 }
 
 .benefits-bg {
   display: flex;
-  background: url("pexels-tima-miroshnichenko-7567525.jpg") no-repeat center center/cover;
-  height: 400px;
+  background: url("pexels-tima-miroshnichenko-7567525.jpg") no-repeat center center/cover, linear-gradient(135deg, #D6F0F4 0%, #F4F4FB 100%);
+  min-height: 480px;
   align-items: center;
   justify-content: flex-start;
-  color: white;
+  color: #074650;
+  padding: 0;
+  padding-left: 6vw;
 }
 
 .benefits-text {
-  background-color: rgba(255, 255, 255, 0.75);
-  color: #222;
-  padding: 30px;
-  margin-left: 40px;
-  width: 33%;
-  border-radius: 12px;
+  background: #FFFFFFCC;
+  color: #074650;
+  padding: 40px 24px;
+  margin: 0 auto;
+  width: 28%;
+  min-width: 260px;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(7,70,80,0.04);
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .benefits-text h2 {
@@ -82,28 +128,39 @@ nav a {
 }
 
 .portfolio {
-  background: linear-gradient(135deg, #7030A0, #01B8AA);
-  color: #fff;
+  background: linear-gradient(135deg, #F4F4FB 0%, #F4D6EC 100%);
+  color: #480091;
+  padding: 80px 0 80px 0;
 }
 
 .plans {
-  background: linear-gradient(135deg, #fdfdfd, #f4f4f4);
+  background: linear-gradient(135deg, #F4F4FB 0%, #D6F0F4 100%);
+  padding: 80px 0 80px 0;
 }
 
 .plan-cards {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
   justify-content: center;
+  align-items: stretch;
 }
 
 .plan {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
-  box-shadow: 0 0 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
+  background: #FFFFFFF7;
+  box-shadow: 0 2px 16px 0 rgba(7,70,80,0.04);
+  border-radius: 16px;
+  flex: 1 1 260px;
+  max-width: 320px;
+  min-width: 260px;
+  margin: 0 auto;
+  padding: 40px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .plan:hover {
@@ -111,32 +168,326 @@ nav a {
 }
 
 .plan h3 {
-  color: #7030A0;
-  margin-bottom: 10px;
+  color: #480091;
+  margin-bottom: 18px;
+  text-align: center;
 }
 
 .plan ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc inside;
+  padding: 0 0 0 18px;
   font-size: 0.95em;
   line-height: 1.6em;
   color: #444;
+  flex-grow: 1;
+  text-align: left;
+  align-self: stretch;
+  margin: 0 0 0 0;
 }
 
 .price {
+  color: #009292;
   font-size: 1.2em;
   font-weight: bold;
-  margin-top: 10px;
-  color: #01B8AA;
+  margin-top: 24px;
+  margin-bottom: 0;
+  align-self: center;
+  text-align: center;
 }
 
 .contact {
-  background: linear-gradient(135deg, #F2C811, #00B5E2);
+  background: linear-gradient(135deg, #F4D6EC 0%, #D6F0F4 100%);
+  color: #074650;
+  padding: 120px 20px 120px 20px;
 }
 
 footer {
-  background: #eee;
+  background: #F8FBFC;
+  color: #074650;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+  padding: 40px 0 20px 0;
+  font-size: 0.95em;
+  border-top: 1px solid #B5DAFE33;
+}
+
+.whatsapp-btn {
+  background-color: #00929222;
+  color: #074650;
+  margin-left: 16px;
+  display: inline-block;
+  transition: background 0.2s;
+  border: 1px solid #009292;
+}
+.whatsapp-btn:hover {
+  background-color: #009292;
+  color: #fff;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 64px;
+}
+
+section::before, section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0; right: 0;
+  height: 60px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+section::before {
+  top: -1px;
+  background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+section::after {
+  bottom: -1px;
+  background: linear-gradient(0deg, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+.plans, .portfolio, .contact, .hero {
+  position: relative;
+  z-index: 1;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+.container > *:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.header-whatsapp-btn {
+  background: #25D366;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 48px;
+  max-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.2em;
+  transition: background 0.2s;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(7,70,80,0.08);
+  overflow: hidden;
+  padding: 0;
+}
+.header-whatsapp-btn:hover {
+  background: #128C7E;
+}
+.header-whatsapp-btn img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 40px 10px 40px 10px;
+  }
+  .plan-cards {
+    flex-direction: column !important;
+    gap: 24px;
+    align-items: center;
+  }
+  .plan {
+    max-width: 95vw;
+    min-width: 0;
+    width: 100%;
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 10px;
+  }
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 1em;
+  }
+  .logo {
+    font-size: 1.2em;
+  }
+  .benefits-bg {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .benefits-text {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 95vw;
+    min-width: 0;
+    padding: 24px 10px;
+  }
+  body {
+    padding-top: 110px;
+  }
+  header {
+    padding-bottom: 8px;
+  }
+  .header-whatsapp-btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    padding: 16px 10px 8px 10px;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    right: 24px;
+    top: 18px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #480091;
+    z-index: 200;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(7,70,80,0.08);
+    border-radius: 10px;
+    padding: 12px 0;
+    min-width: 160px;
+    z-index: 150;
+  }
+  .mobile-nav a {
+    color: #074650;
+    font-size: 1.08em;
+    padding: 10px 24px;
+    text-align: right;
+    margin: 0;
+    border-bottom: 1px solid #F4F4FB;
+    text-decoration: none;
+  }
+  .mobile-nav a:last-child {
+    border-bottom: none;
+  }
+  .logo {
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 60px 10px;
+  }
+  .benefits-bg {
+    flex-direction: column;
+    min-height: 0;
+    padding: 20px 0;
+  }
+  .benefits-text {
+    margin-left: 0;
+    width: 95%;
+    margin: 0 auto;
+    padding: 18px;
+  }
+  .plan-cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .plan {
+    max-width: 95vw;
+    margin: 0 auto;
+    min-width: 0;
+  }
+  .contact {
+    padding: 60px 10px 60px 10px;
+  }
+  .cta, .whatsapp-btn {
+    display: block;
+    width: 100%;
+    margin: 12px 0 0 0;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 701px) {
+  .mobile-nav-toggle, .mobile-nav {
+    display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 10px 2vw;
+  }
+  .hero h1 {
+    font-size: 1.3em;
+  }
+  .plan {
+    padding: 10px;
+  }
+  .benefits-text {
+    padding: 10px;
+  }
+  .cta, .whatsapp-btn {
+    font-size: 1em;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-container {
+    padding: 8px 2vw;
+  }
+  nav a {
+    margin: 0 4px;
+    font-size: 0.98em;
+  }
+}
+
+.tally-embed-wrapper {
+  margin: 48px auto 0 auto;
+  max-width: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px 0 rgba(74, 0, 145, 0.10);
+  background: #FFFFFFF7;
+}
+
+.tally-embed-wrapper iframe {
+  border: none;
+  min-height: 480px;
+  width: 100%;
+  display: block;
+}
+
+/* Animação de realce para o embed do Tally.so */
+.highlight-tally {
+  animation: highlightTally 1.2s ease;
+}
+@keyframes highlightTally {
+  0% { box-shadow: 0 0 0 0 #FE6DB6; }
+  30% { box-shadow: 0 0 0 8px #FE6DB644; }
+  60% { box-shadow: 0 0 0 16px #FE6DB622; }
+  100% { box-shadow: 0 0 0 0 #FE6DB600; }
 }

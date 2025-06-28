@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,12 +12,20 @@
   <header>
     <div class="nav-container">
       <div class="logo">Loyal Consulting</div>
+      <button class="mobile-nav-toggle" aria-label="Abrir menu" onclick="document.querySelector('.mobile-nav').classList.toggle('open')">☰</button>
       <nav>
         <a href="#benefits">Benefícios</a>
-        <a href="#portfolio">Dashboard</a>
+        <a href="#portfolio">Exemplo</a>
         <a href="#planos">Planos</a>
         <a href="#contato">Contato</a>
       </nav>
+      <div class="mobile-nav" style="display:none">
+        <a href="#benefits" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Benefícios</a>
+        <a href="#portfolio" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Exemplo</a>
+        <a href="#planos" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Planos</a>
+        <a href="#contato" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Contato</a>
+      </div>
+      <a href="https://wa.me/5511954824181?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vi%20o%20site%20da%20Loyal%20e%20gostaria%20de%20falar%20mais." class="header-whatsapp-btn" target="_blank" rel="noopener"><img src="WhatsApp_Logo_PNG_Sem_Fundo_Transparente.png" alt="WhatsApp" /></a>
     </div>
   </header>
 
@@ -46,7 +53,7 @@
 
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2>Exemplo de Dashboard</h2>
+      <h2>Exemplo</h2>
       <iframe title="Dashboard de Vendas e Finanças" width="100%" height="480" src="https://app.powerbi.com/view?r=eyJrIjoiZTE0YzYyMzktNDI4NC00OTY4LWIxYzgtYzU0YTg5NjMyNjRlIiwidCI6ImQwNmUzNjk5LTEwYzEtNDdiMi05NGRmLTk1MTQ1OTUyNzNiZiJ9" frameborder="0" allowfullscreen="true"></iframe>
     </div>
   </section>
@@ -94,6 +101,10 @@
       <h2>Vamos conversar?</h2>
       <p>Entre em contato para agendar uma reunião de diagnóstico gratuita.</p>
       <a href="#planos" class="cta">Solicitar orçamento</a>
+      <a href="https://wa.me/5511954824181?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vi%20o%20site%20da%20Loyal%20e%20gostaria%20de%20falar%20mais." class="cta whatsapp-btn" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <div class="tally-embed-wrapper">
+        <iframe data-tally-src="https://tally.so/embed/w4YLok?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Contato Loyal Consulting"></iframe>
+      </div>
     </div>
   </section>
 
@@ -102,5 +113,43 @@
       <p>© 2025 Loyal Consulting. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+  <script>
+  // Mobile nav toggle
+  const toggleBtn = document.querySelector('.mobile-nav-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  if (toggleBtn && mobileNav) {
+    toggleBtn.addEventListener('click', function() {
+      if (mobileNav.classList.contains('open')) {
+        mobileNav.style.display = 'none';
+        mobileNav.classList.remove('open');
+      } else {
+        mobileNav.style.display = 'flex';
+        mobileNav.classList.add('open');
+      }
+    });
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.style.display = 'none';
+        mobileNav.classList.remove('open');
+      });
+    });
+  }
+  // Animação de realce no Tally.so ao clicar em 'Solicite um orçamento'
+  document.querySelectorAll('.cta[href="#planos"], .cta[href="#contato"]').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const tally = document.querySelector('.tally-embed-wrapper');
+      if (tally) {
+        setTimeout(() => {
+          tally.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          tally.classList.remove('highlight-tally');
+          void tally.offsetWidth; // reflow para reiniciar animação
+          tally.classList.add('highlight-tally');
+        }, 200);
+      }
+    });
+  });
+  </script>
 </body>
 </html>
