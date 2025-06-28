@@ -1,19 +1,26 @@
 
 * { margin:0; padding:0; box-sizing:border-box; }
+
 body {
-  font-family:'Inter', sans-serif;
-  background:#f4f4f4;
-  color:#222;
-  text-align:center;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9aee, #9afff8, #b692ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
 }
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
 .container { max-width:900px; margin:0 auto; padding:60px 20px; }
 
-.hero {
-  background-size:cover;
-  background-position:center;
-  color:#fff;
-  padding:120px 20px 100px;
-}
+
 .hero h1 {
   font-size:3rem;
   text-shadow:0 0 10px rgba(0,0,0,0.7);
@@ -100,15 +107,26 @@ footer {
   color: #000;
 }
 
+
 body {
-  background: linear-gradient(145deg, #fdf1ff, #e9f7ff, #e4fff1);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9aee, #9afff8, #b692ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   color: #333;
 }
 
-.hero {
-  background-position: center;
-  background-size: cover;
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
+
+
+
+
 
 .card h3 {
   color: #333;
@@ -160,10 +178,24 @@ p {
   margin: 0 auto 1.5rem;
 }
 
+
 body {
-  background: linear-gradient(145deg, #fef6ff, #e6fcff, #ebfff7);
-  transition: background 1s ease;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9aee, #9afff8, #b692ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
 }
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
 
 section {
   padding: 60px 0;
@@ -189,29 +221,4 @@ p {
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-/* Scroll animation */
-@keyframes fadeInOnScroll {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Reforço de centralização */
-.hero h1, .hero p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  max-width: 700px;
 }
